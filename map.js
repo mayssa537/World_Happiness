@@ -3986,7 +3986,7 @@ var countries = {
     "type": "Feature",
     "id": "COD",
     "properties": {
-      "name": "Democratic Republic of the Congo"
+      "name": "Congo (Kinshasa)"
     },
     "geometry": {
       "type": "Polygon",
@@ -4121,7 +4121,7 @@ var countries = {
     "type": "Feature",
     "id": "COG",
     "properties": {
-      "name": "Republic of the Congo"
+      "name": "Congo (Brazzaville)"
     },
     "geometry": {
       "type": "Polygon",
@@ -11437,7 +11437,7 @@ var countries = {
     "type": "Feature",
     "id": "SRB",
     "properties": {
-      "name": "Republic of Serbia"
+      "name": "Serbia"
     },
     "geometry": {
       "type": "Polygon",
@@ -12100,7 +12100,7 @@ var countries = {
     "type": "Feature",
     "id": "TTO",
     "properties": {
-      "name": "Trinidad and Tobago"
+      "name": "Trinidad & Tobago"
     },
     "geometry": {
       "type": "Polygon",
@@ -12273,7 +12273,7 @@ var countries = {
     "type": "Feature",
     "id": "TZA",
     "properties": {
-      "name": "United Republic of Tanzania"
+      "name": "Tanzania"
     },
     "geometry": {
       "type": "Polygon",
@@ -12520,7 +12520,7 @@ var countries = {
     "type": "Feature",
     "id": "USA",
     "properties": {
-      "name": "United States of America"
+      "name": "United States"
     },
     "geometry": {
       "type": "MultiPolygon",
@@ -13274,7 +13274,7 @@ var countries = {
     "type": "Feature",
     "id": "PSE",
     "properties": {
-      "name": "West Bank"
+      "name": "Palestinian Territories"
     },
     "geometry": {
       "type": "Polygon",
@@ -13585,32 +13585,34 @@ var countries = {
   }]
 };
 
-function setColor(name) {
-  if (name[0] == "A") {
-    return "red";
-  }
-  else   if (name[0] == "B") {
-    return "green";
-  }
-  else   if (name[0] == "C") {
-    return "blue";
-  }
+// function setColor(name) {
+//   if (name[0] == "A") {
+//     return "red";
+//   }
+//   else   if (name[0] == "B") {
+//     return "green";
+//   }
+//   else   if (name[0] == "C") {
+//     return "blue";
+//   }
     
-    return "#D3D3D3";
+//     return "#D3D3D3";
   
-}
+// }
 
 
-L.geoJSON(countries, {
-  style: function(feature) {
-    return {
-      fillColor: setColor(feature.properties.name), // Default color of countries.
-      fillOpacity: 1,
-      stroke: true,
-      color: "grey", // Lines in between countries.
-      weight: 2
-    };
-  }
-}).bindPopup(function(layer) {
-  return layer.feature.properties.name;
-}).addTo(map);
+// L.geoJSON(countries, {
+//   style: function(feature) {
+//     console.log(feature)
+
+//     return {
+//       fillColor: setColor(feature.properties.name), // Default color of countries.
+//       fillOpacity: 1,
+//       stroke: true,
+//       color: "grey", // Lines in between countries.
+//       weight: 2
+//     };
+//   }
+// }).bindPopup(function(layer) {
+//   return layer.feature.properties.name;
+// }).addTo(map);
