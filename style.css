@@ -28,3 +28,14 @@
 div.p {
   text-align: center
 }
+
+
+div.leaflet-container {
+    background-color:rgba(255,0,0,0.0);
+}
+div.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

@@ -8,11 +8,6 @@ let colorratio = {
     4:"red"
 };
 
-library(leaflet.extras)
-
-mapname%>%
-
-setMapWidgetStyle(list(background= "white"))
 
 let colorinput = {
     AFG: "1",
