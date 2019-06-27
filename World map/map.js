@@ -1,5 +1,6 @@
 var map = L.map('mapid').setView([0, 0], 2);
 
+console.log("hey")
 
 let colorratio = {
     1:"green",
@@ -8,11 +9,6 @@ let colorratio = {
     4:"red"
 };
 
-library(leaflet.extras)
-
-mapname%>%
-
-setMapWidgetStyle(list(background= "white"))
 
 let colorinput = {
     AFG: "1",

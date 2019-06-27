@@ -2,7 +2,7 @@ var url="/graphs"
 
 
 function buildPlot() {
-  d3.json(url).then(function(response) {
+  d3.json(url, function(error, response) {
 
     console.log(response);
     var trace = {
@@ -19,10 +19,12 @@ function buildPlot() {
     var data = [trace];
 
     var layout = {
-      title: "Happiness Score by Region",
-  	};
+      title: "Happiness Score by Region"
+    };
 
-  	Plotly.newPlot("plot", data, layout);
+    Plotly.newPlot("plot", data, layout);
+  });
 }
+
 
 buildPlot();
