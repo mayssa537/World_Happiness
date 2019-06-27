@@ -1,32 +1,31 @@
 d3.csv("2018.csv", function(data) {
   data.forEach(function(d) {
-    d.Score = +d.Score;
+    d["Happiness Score"] = +d["Happiness Score"];
   });
 
   var countryIndex = 0;
-
   function setColor(index) {
     if (index == -1) {
       return "#D3D3D3";
       
     } 
 
-    if (data[index].Score < 3.6) {
+    if (data[index]["Happiness Score"] < 3.6) {
       return "#eff3ff";
     }
-    else if (data[index].Score < 4.3) {
+    else if (data[index]["Happiness Score"] < 4.3) {
       return "#c6dbef";
     }
-    else if (data[index].Score < 4.9) {
+    else if (data[index]["Happiness Score"] < 4.9) {
       return "#9ecae1";
     }
-    else if (data[index].Score < 5.6) {
+    else if (data[index]["Happiness Score"] < 5.6) {
       return "#6baed6";
     }
-    else if (data[index].Score < 6.3) {
+    else if (data[index]["Happiness Score"] < 6.3) {
       return "#4292c6";
     }  
-    else if (data[index].Score < 7.0) {
+    else if (data[index]["Happiness Score"] < 7.0) {
       return "#2171b5";
     }  
     return "#084594";
@@ -57,8 +56,7 @@ d3.csv("2018.csv", function(data) {
       };
     }
   }).bindPopup(function(layer) {
-
-    return layer.feature.properties.name;
+      return layer.feature.properties.name;
   }).addTo(map);
 
   var legend = L.control({position: 'bottomright'});
