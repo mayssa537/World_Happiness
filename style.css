@@ -1,0 +1,58 @@
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #2ECC71;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 100px
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div.p {
+  text-align: center
+}
+
+
+div.leaflet-container {
+    background-color:rgba(255,0,0,0.0);
+}
+div.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.legend {
+    line-height: px;
+    color: #555;
+    background-color: #D3D3D3;
+    padding: 8px;
+    width:150px;
+}
+.legend i {
+    width: 30px;
+    height: 20px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}

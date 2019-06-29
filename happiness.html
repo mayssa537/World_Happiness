@@ -34,6 +34,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	
 </head>
 <body>
@@ -65,14 +67,16 @@
 
  	<script src="{{ url_for('static', filename='./static/js/map.js') }}"></script>
  	<script src="{{ url_for('static', filename='./static/js/color.js') }}"></script>
-	<script src="{{ url_for('static', filename='./static/js/app.js') }}"></script>
 	</div>
 	</div>
 
-<div class="row" id="graphs">
+<div class="row" id="plot">
  	<div class="col-md-12">
-	<h1><center>Graphs</center></h1>
 
+	<h1><center>Graphs</center></h1>
+<!-- <script src="{{ url_for('static', filename='./static/js/app.js') }}"></script> -->
+	<script src="{{ url_for('static', filename='./static/js/mpdata.js') }}"></script>
+	<script src="{{ url_for('static', filename='./static/js/mpplots.js') }}"></script>
 
 	</div>
 	</div>

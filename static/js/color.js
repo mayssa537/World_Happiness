@@ -56,10 +56,15 @@ d3.csv("https://raw.githubusercontent.com/mayssa537/World_Happiness/master/CSVs/
       };
     }
   }).bindPopup(function(layer) {
-      return layer.feature.properties.name;
+      countryIndex = getIndex(layer.feature.properties.name);
+     if (countryIndex == -1) {
+       return layer.feature.properties.name;
+     }
+
+     return `${layer.feature.properties.name} <br> Score: ${data[countryIndex]["Happiness Score"]}`;
   }).addTo(map);
 
-  var legend = L.control({position: 'bottomright'});
+  var legend = L.control({position: 'bottomleft'});
 
 legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend');

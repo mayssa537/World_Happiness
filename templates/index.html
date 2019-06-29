@@ -55,14 +55,14 @@
 	<div class="jumbotron jumbotron-fluid" id="report">
   	<div class="container">
     <h1 class="display-4">Report</h1>
-    <p class="lead">Unfortunately, there is no formula to calculate happiness. Especially when it comes to countries of the world, the only way to determine the best places to live is to measure the level of satisfaction of a country's citizens. However, the only factors that can be taken into effect are decisions that are made which directly affect people, which also includes assuming which policies are good, and which are bad, which is not something that can be agreed on on an international scale. The World Happiness Report takes a number of topics such as GDP per capita, life expectancy, freedom, corruption, and generosity and creates metrics on these in order to rank countries by their "happiness score." The below map and graphs showcase each of the countries measured over a 3 year period between 2015-2018, and how happiness may have changed over time.</p>
+    <p class="lead">Unfortunately, there is no formula to calculate happiness. Especially when it comes to countries of the world, the only way to determine the best places to live is to measure the level of satisfaction of a country's citizens. However, the only factors that can be taken into effect are decisions that are made which directly affect people, which also includes assuming which policies are good, and which are bad, which is not something that can be agreed on on an international scale. The World Happiness Report takes a number of topics such as GDP per capita, life expectancy, freedom, corruption, and generosity and creates metrics on these in order to rank countries by their "happiness score." The below map and graphs showcase each of the countries measured over a 4 year period between 2015-2018, and how happiness may have changed over time.</p>
  	</div>
 	</div>
 
  	<div class="row" id="map">
  	<div class="col-md-12" align="center">
 	<h1><center>Map</center></h1>
-	  <div id="mapid" style="width: 50%; height: 400px;"></div>
+	  <div id="mapid" style="width: 80%; height: 500px;"></div>
 
  	<script src="../static/js/map.js"></script>
  	<script src="../static/js/color.js"></script>
@@ -70,16 +70,17 @@
 	</div>
 	</div>
 
-<div class="row" id="graphs">
+<div class="row"><!--  id="plot" -->>
  	<div class="col-md-12">
-	<h1><center>Graphs</center></h1>
+	<h1><center>Graph</center></h1><br><br><br>
   <div id="plot">
-
-
 	</div>
 	</div>
+</div>
 
-
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/mpdata.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/mpplots.js') }}"></script>
 
 
 </body>
