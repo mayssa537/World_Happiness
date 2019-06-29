@@ -1,4 +1,4 @@
-d3.csv("../../CSVs/2018.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/mayssa537/World_Happiness/master/CSVs/2018.csv", function(data) {
   data.forEach(function(d) {
     d["Happiness Score"] = +d["Happiness Score"];
   });
