@@ -83,6 +83,5 @@ legend.onAdd = function (map) {
 
 legend.addTo(map);
 
- 
 });
 
